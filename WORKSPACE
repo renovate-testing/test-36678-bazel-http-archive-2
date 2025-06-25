@@ -5,8 +5,8 @@ http_archive(
     url = "https://github.com/aspect-build/rules_js/releases/download/v2.3.7/rules_js-v2.3.7.tar.gz",
 )
 
-git_repository(
-    name = "devinfra",
-    commit = "db18d7175d759fdfb3e40d363a1579621d1fcffd",
-    remote = "https://github.com/angular/dev-infra.git",
+http_archive(
+    name = "io_bazel_rules_webtesting",
+    sha256 = "e9abb7658b6a129740c0b3ef6f5a2370864e102a5ba5ffca2cea565829ed825a",
+    urls = ["https://github.com/bazelbuild/rules_webtesting/releases/download/0.3.5/rules_webtesting.tar.gz"],
 )
